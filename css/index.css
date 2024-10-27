@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 20px;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+header nav ul{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav ul li a{
+    font-size: 18px !important;
+}
+
+h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 60px;
+}
+
+section{
+    margin-top: 60px;
+    padding: 0 10%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+}
+
+section article{
+    flex: 1 1 280px;
+    margin: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 590px;
+}
+
+section article img{
+    width: 100%;
+    max-width: 590px;
+    height: auto; 
+}
+
+section article p{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #7a7a7a;
+    text-align: center;
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 670px) {
+    section article p{
+        font-size: 25px;
+    }
+    header a{
+        font-size: 40px;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    header nav ul li{
+        margin-top: 0px;
+        padding: 2px 5px;
+        background: #7a7a7a;
+    }
+    section{
+        padding: 0 5%;
+    }
+}
